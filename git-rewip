@@ -1,0 +1,10 @@
+#!/bin/bash
+
+msg="$(git log -1 HEAD --pretty=format:%s)"
+
+if [ "$msg" = "wip" ]
+then
+    git reset --mixed HEAD~
+else
+    echo "Latest commit is not 'wip'"
+fi

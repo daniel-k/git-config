@@ -1,0 +1,30 @@
+[core]
+	autocrlf = input
+[push]
+	default = simple
+[color]
+	ui = true
+[credential]
+	helper = store
+	useHttpPath = true
+
+[alias]
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	lola = log --pretty=oneline --abbrev-commit --graph --decorate --all
+	pullr = pull --rebase
+	ai = add --interactive
+	ap = add --patch
+	ca = commit --all
+	co = checkout
+	cp = cherry-pick
+	s = status
+	l = log --graph	 --summary --decorate --all
+	b = branch
+	c = commit
+	a = add
+	d = diff
+	dc = diff --cached
+	ri = rebase -i
+	ri8 = rebase -i HEAD^^^^^^^
+	wip = commit --all -m "wip"
+	fix = commit --all -m "fix"
