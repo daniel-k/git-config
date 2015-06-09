@@ -28,4 +28,4 @@
 	ri = rebase -i
 	ri8 = rebase -i HEAD^^^^^^^
 	wip = commit --all -m "wip"
-	fix = commit -m "fix"
+	fix = commit --amend -C HEAD
