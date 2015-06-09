@@ -11,6 +11,7 @@
 [alias]
 	lol = log --pretty=oneline --abbrev-commit --graph --decorate
 	lola = log --pretty=oneline --abbrev-commit --graph --decorate --all
+	lo = log --graph	 --summary --decorate --all
 	pullr = pull --rebase
 	ai = add --interactive
 	ap = add --patch
@@ -18,8 +19,8 @@
 	co = checkout
 	cp = cherry-pick
 	s = status
-	l = log --graph	 --summary --decorate --all
 	b = branch
+	l = log
 	c = commit
 	a = add
 	d = diff
@@ -27,4 +28,4 @@
 	ri = rebase -i
 	ri8 = rebase -i HEAD^^^^^^^
 	wip = commit --all -m "wip"
-	fix = commit --all -m "fix"
+	fix = commit -m "fix"
