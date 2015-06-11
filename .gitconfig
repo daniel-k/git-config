@@ -25,7 +25,8 @@
 	a = add
 	d = diff
 	dc = diff --cached
-	ri = rebase -i
+	ri = rebase -i --autosquash
 	ri8 = rebase -i HEAD^^^^^^^
 	wip = commit --all -m "wip"
 	fix = commit --amend -C HEAD
+	fixup = commit --fixup=HEAD
