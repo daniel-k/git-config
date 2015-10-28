@@ -5,7 +5,7 @@
 [color]
 	ui = true
 [credential]
-	helper = store
+	helper = cache
 	useHttpPath = true
 
 [alias]
