@@ -18,6 +18,7 @@
 	ap = add --patch
 	ca = commit --all
 	co = checkout
+	cop = checkout -p
 	cp = cherry-pick
 	s = status
 	b = branch
