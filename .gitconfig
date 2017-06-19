@@ -14,6 +14,7 @@
 	lola = log --pretty=oneline --abbrev-commit --graph --decorate --all
 	lo = log --graph	 --summary --decorate --all
 	pullr = pull --rebase
+	pullra = pull --rebase --autostash
 	ai = add --interactive
 	ap = add --patch
 	ca = commit --all
@@ -35,3 +36,6 @@
 	theirs = checkout --theirs
 	ours = checkout --ours
 	shm = diff-tree --no-commit-id --name-status -r
+	unstage = reset -p HEAD
+	reword = commit --amend
+	prevision = "!f() { git checkout `git log --oneline $2 |  awk -v commit="$1" 'FNR == -commit+1 {print $1}'` $2;} ;f"
